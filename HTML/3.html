@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <link rel="stylesheet" href="/CSS/style_1.css">
+    <!--Importo Fonts Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">   
+    <title>HTML5 y CSS3 Nº3 - Contacto Barberia Alura</title>
+</head>
+<body>
+    <header>
+        <div class="Navegacion">
+        <h1>
+            <img src="/img/logo.png" alt="Logo_Principal">
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="1.html">Home</a></li>
+                <li><a href="2.html">Productos</a></li>
+                <li><a href="3.html">Contacto</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+     <form action="" method="post">
+        <label for="nombre-apellido">Nombre y Apellido</label>
+        <input type="text" id="nombre-apellido" class="Input-padron" >
+
+        <label for="email">Correo Electronico</label>
+        <input type="email" id="email" class="Input-padron" required  placeholder="email@dominio.com">
+
+        <label for="telefono">telefono</label>
+        <input type="tel" id="telefono" class="Input-padron" required  placeholder="(+57) XXX XXX XXXX">
+
+        <label for="Mensaje">Mensaje</label>
+        <textarea id="Mensaje" cols="70" rows="10" class="Input-padron" required></textarea>
+
+    <fieldset>
+        <legend>¿Como le gustaria que lo contactemos?</legend>
+
+        <label for="radio-email"><input type="radio" name="contacto" 
+            value="email" id="radio-email"> Email</label>
+        
+        <label for="telefono"><input type="radio" name="contacto"  
+            value="telefono" id="radio-telefono"> Telefono</label>
+        
+        <label for="radio-Wpp"><input type="radio" name="contacto"  
+            value="Wpp" id="radio-Wpp" checked> Whatsapp </label>
+    </fieldset>
+    
+    <fieldset>
+        <legend>¿En que horario prefiere ser atendido?</legend>
+        <select name="horario" id="horario">
+            <option value="">Mañana</option>
+            <option value="">Tarde</option>
+            <option value="">Noche</option>
+        </select>
+    </fieldset>
+
+        <label for="checkbox" class="checkbox"><input type="checkbox" checked>¿Le gustaria recibir novedades de la Barberia ?</label>
+        
+        <button type="submit" class="enviar">Enviar</button>
+     
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+            <th>Dia</th>
+            <th>Horario</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+   
+            <tr>
+            <td>Lunes</td>
+            <td>8AM - 20h</td>
+            </tr>
+            <tr>
+            <td>Martes</td>
+            <td>9AM - 20h</td>
+            </tr>
+            <tr>
+            <td>Miercoles</td>
+            <td>10AM - 21h</td>
+            </tr>
+        
+        </tbody>
+
+    </table>
+    </main>
+
+    <footer>
+        <img src="../img/logo-blanco.png" alt="Logo_Principal_Blanco">
+        <p class="copyright">&copy Copyright Barberia - 2023</p>
+    </footer>
+</body>
+</html>
